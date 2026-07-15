@@ -27,7 +27,7 @@ jobs:
     - name: Run the tracker script
       env:
         DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-      run: python tracker.py
+      run: python -u tracker.py
 
     - name: Save updated fighter list
       uses: stefanzweifel/git-auto-commit-action@v5
